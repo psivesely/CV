@@ -6,8 +6,8 @@
 \usepackage[hidelinks]{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Noah `Psi' Vesely} % Your name
-\address{psi@berkeley.edu} % Your phone number and email
+\name{Psi Vesely} % Your name
+\address{psi@ucsd.edu} % Your phone number and email
 
 %----------------------------------------------------------------------------
 %----------------------------------------------------------------------------
@@ -17,15 +17,19 @@
 %----------------------------------------------------------------------------
 \begin{rSection}{Education}
 
+\textbf{UCSD} \hfill \emph{`20---}  \\
+PhD in Cryptography \hfill \emph{San Diego, CA} \\
+{\small Thesis proposal to be made late '21/early '22---likely post-quantum zero-knowledge proofs.}
+
 \textbf{University College London} \hfill \emph{`18---`19}  \\
 Master in Information Security \emph{with distiction} \hfill \emph{London, UK} \\
 Thesis: \emph{On the Design of Polynomial Commitment Schemes} \\
-{\small We introduce two new extractable polynomial commitments (PCs), one \emph{succinct} and with \emph{updatable} SRS, and another \emph{transparent} and practically efficient with logarithmic proofs and commitments, and sublinear verification.}
+{\small We introduce two new extractable polynomial commitments (PCs). One is \emph{succinct} with an \emph{updatable} SRS. The other is \emph{transparent} with constant-sized commitments, logarithmic-sized proofs, and sublinear verification.}
 
 \textbf{Hampshire College} \hfill \emph{`10---`15} \\
-Bachelor of Mathematics, minor in Computer Science \hfill \emph{Amherst, MA, USA} \\
+Bachelor of Mathematics, minor in Computer Science \hfill \emph{Amherst, MA} \\
 Thesis 1: \emph{On McEliece-Type Cryptosystems as Post-Quantum Standards} \\
-{\small An analysis of McEliece-Type cryptosystems as a possible post-quantum PKC standard. Review of literature focusing on developments towards an IND-CCA2 variant with sufficiently small key size for embedded devices.} \\
+{\small An analysis of McEliece-Type cryptosystems as possible post-quantum standards, focusing on developments towards an IND-CCA2 variant with sufficiently small key size for embedded devices.} \\
 Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 {\small We introduce a new cryptographic compression function evolved using the PushGP genetic programming environment and a novel fitness heuristic.}
 
@@ -35,12 +39,13 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 %----------------------------------------------------------------------------
 \begin{rSection}{Publications}
 
-\textbf{Aggregatable Signatures from an Inner Pairing Product Argument} \hfill \emph{Oct. `19} \\
+\textbf{Proofs for Inner Pairing Products and Applications} \hfill \emph{Oct. `19} \\
+\emph{In submission, ASIACRYPT `21} \\
 \url{https://eprint.iacr.org/2019/1177.pdf} \\
-{\small We present a new public-coin setup argument for membership in pairing-based languages and use it to build a new logarithmic-size, BLS-based aggregate signature that can be verified much faster than previous results.}
+{\small We present a generalized inner product argument (GIPA), then show how to achieve a log-time verifier for several pairing-based languages. We apply these arguments to build polynomial commitments that improve on the opening proof time and CRS size of KZG, provide the first concretely efficient protocol for aggregating Groth16 proofs without recursion, and construct a low-memory SNARK that improves on the efficiency of Bitansky et al. [STOC '13].}
 
 \textbf{Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS} \hfill \emph{Sept. `19} \\
-\emph{In submission, EUROCRYPT `20} \\
+\emph{EUROCRYPT `20} \\
 \url{https://eprint.iacr.org/2019/1047.pdf} \\
 {\small We present a methodology to construct preprocessing zkSNARKs where the structured reference string (SRS) is universal and updatable. Improving on the state-of-the-art in this setting, we use our methodology to obtain a preprocessing zkSNARK where the SRS has linear size and arguments have constant size.}
 
@@ -51,13 +56,15 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 
 \begin{rSection}{Work experience}
 
-\textbf{University of California, Berkeley} \hfill \emph{Oct. `19---Present} \\
-\emph{Research Assistant} \hfill \emph{Berkeley, CA} \\
-{\small With professor Alessandro Chiesa, researching topics in zero-knowledge proofs and theoretical cryptography.}
 
-\textbf{C Labs} \hfill \emph{June `19---Present} \\
-\emph{Research Scientist} \hfill \emph{San Francisco, USA} \\
-{\small Designed an ultra-light client sync protocol for the Celo BFT-style blockchain network utilizing zkSNARKS, proof-carrying data, and SNARK-friendly primitives including a novel composite hash function. Writing the technical paper.}
+\textbf{cLabs} \hfill \emph{June `19---Present} \\
+\emph{Research Scientist} \hfill \emph{San Francisco, CA} \\
+{\small Designed an ultralight client for the Celo blockchain using SNARKS and circuit-friendly primitives including a novel aggregeate multisignature
+composite hash function. Co-author of the technical paper.}
+
+\textbf{University of California, Berkeley} \hfill \emph{Oct. `19---Oct. `20} \\
+\emph{Research Assistant} \hfill \emph{Berkeley, CA} \\
+{\small With professor Alessandro Chiesa, researching topics in zero-knowledge proofs.}
 
 \textbf{Glyff} \hfill \emph{Summer `18} \\
 \emph{Research Scientist} \hfill \emph{London, UK} \\
@@ -68,11 +75,11 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 {\small Information security and cryptography related development, consulting, and training. With a focus on helping non-profits, clients included Data Cívica and Human Rights Data Analysis Group.}
 
 \textbf{Freedom of the Press Foundation} \hfill \emph{Sept. `15---Aug. `17} \\
-\emph{Security Engineer} \hfill \emph{San Francisco, USA} \\
+\emph{Security Engineer} \hfill \emph{San Francisco, CA} \\
 \url{https://github.com/freedomofpress/securedrop} \\
-{\small Developed the SecureDrop open-source whistleblower submission platform. Stringent security requirements and a multi-machine, multi-OS architecture demanded wide-breadth domain knowledge including cryptographic, network, OS, and application-level security expertise.} \\
+{\small Jointly developed the SecureDrop open-source whistleblower submission platform. Stringent security requirements and a multi-machine, multi-OS architecture demanded wide-breadth domain knowledge including cryptographic, network, OS, and application-level security expertise.} \\
 \url{https://github.com/freedomofpress/fingerprint-securedrop} \\
-{\small Designed and implemented a machine learning system to evaluate website fingerprinting attacks and defenses for Tor onion services. Led Tor developer conference sessions on the topic.}
+{\small Implemented a machine learning system to evaluate website fingerprinting attacks and defenses for Tor onion services. Led Tor developer conference sessions on the topic and worked closely with academic researchers.}
 
 \end{rSection}
 
@@ -93,11 +100,12 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 \begin{rSection}{Teaching experience}
 
 \textbf{Hampshire College Quantitative Resource Center} \hfill \emph{Sept. `12---May `15} \\
-\emph{Manager} \hfill \emph{Amherst, MA, USA} \\
+\emph{Manager} \hfill \emph{Amherst, MA} \\
 {\small Tutored primarily mathematics and computer science. Managed the hiring process, budgeting, and staff schedule, leading to record attendance levels.}
 
-\textbf{Linear Algebra} \hfill \emph{Fall `15} \\
-\emph{Teaching Assistant} \hfill \emph{Hampshire College}
+\textbf{Linear Algebra} \hfill \emph{Fall `14} \\
+\emph{Teaching Assistant} \hfill \emph{Hampshire College} \\
+{\small Guest taught a lecture, held weekly office hours, and marked coursework with Prof. Sarah Hews.}
 
 \end{rSection}
 
@@ -113,23 +121,27 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 %----------------------------------------------------------------------------
 %----------------------------------------------------------------------------
 
-\begin{rSection}{Other Software Projects}
+\begin{rSection}{Software Projects}
+
+\textbf{ripp} \hfill \emph{`20} \\
+\emph{Co-Author} \hfill \url{https://github.com/arkworks-rs/ripp} \\
+{\small An implementation of several arguments from the ``Proofs for Inner Pairing Products and Applications'' paper.}
 
 \textbf{marlin} \hfill \emph{`19} \\
-\emph{Co-Author} \hfill \url{https://github.com/scipr-lab/marlin} \\
+\emph{Co-Author} \hfill \url{https://github.com/arkworks-rs/marlin} \\
 {\small An implementation of the Marlin zkSNARK.}
 
 \textbf{winternitz} \hfill \emph{`18} \\
 \emph{Author} \hfill \url{https://github.com/nvesely/winternitz} \\
 {\small The first standalone implementation of the post-quantum WOTS-T one-time signature scheme.}
 
-\textbf{SodiumOxide} \hfill \emph{`18} \\
-\emph{Maintainer \& Contributor} \hfill \url{https://github.com/sodiumoxide/sodiumoxide} \\
-{\small A Rust interface to the C++ libsodium cryptography library that seeks to utilize Rust's featureset to improve on the usability and safety of the library.}
-
 \textbf{Rusty Secrets} \hfill \emph{`18} \\
 \emph{Co-Author} \hfill \url{https://github.com/SpinResearch/RustySecrets} \\
 {\small A Rust implementation of Shamir's Secret Sharing Scheme that provides authentication of shares. Used in the Sunder application.}
+
+\textbf{SodiumOxide} \hfill \emph{`18} \\
+\emph{Maintainer \& Contributor} \hfill \url{https://github.com/sodiumoxide/sodiumoxide} \\
+{\small A Rust interface to the C++ libsodium cryptography library that seeks to utilize Rust's featureset to improve on the usability and safety of the library.}
 
 \textbf{libalpaca} \hfill \emph{`17} \\
 \emph{Co-Author} \hfill \url{https://github.com/camelids/libalpaca}\\
