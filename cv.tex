@@ -17,20 +17,19 @@
 %----------------------------------------------------------------------------
 \begin{rSection}{Education}
 
-\textbf{UCSD} \hfill \emph{`20---Present}  \\
-PhD in Cryptography \hfill \emph{San Diego, CA} \\
-{\small Thesis proposal to be made late '21/early '22---likely post-quantum zero-knowledge proofs.}
+\textbf{University of California, San Diego} \hfill \emph{`20---Present}  \\
+PhD in Cryptography \hfill \emph{San Diego, CA}
 
 \textbf{University College London} \hfill \emph{`18---`19}  \\
-Master in Information Security \emph{with distiction} \hfill \emph{London, UK} \\
-Thesis: \emph{On the Design of Polynomial Commitment Schemes} \\
-{\small We introduce two new extractable polynomial commitments (PCs). One with \emph{succinct} proofs, enforceable degree bounds, and an \emph{updatable} SRS. The other \emph{transparent} with constant-sized commitment, square root opening time and CRS size, and log-time verification.}
+MSc in Information Security \emph{with distiction} \hfill \emph{London, UK} \\
+\emph{On the Design of Polynomial Commitment Schemes} with Dr. Mary Maller \\
+{\small We introduce two new polynomial commitments (PCs) and a black box transformation for evaluating multiple PCs at multiple points given a PC supporting evaluation at a single point. One PC achieves full succinctness and enforceable degree bounds via an universal and updatable SRS; the other is transparent with constant commitments, log-sized proofs, and square root URS and prover opening time.}
 
 \textbf{Hampshire College} \hfill \emph{`10---`15} \\
 Bachelor of Mathematics, minor in Computer Science \hfill \emph{Amherst, MA} \\
-Thesis 1: \emph{On McEliece-Type Cryptosystems as Post-Quantum Standards} \\
-{\small An analysis of McEliece-Type cryptosystems as possible post-quantum standards, focusing on developments towards an IND-CCA2 variant with sufficiently small key size for embedded devices.} \\
-Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
+\emph{On McEliece-Type Cryptosystems as Post-Quantum Standards} with Prof. Polanco Encarnación \\
+{\small An analysis of the suitability of McEliece-Type cryptosystems as post-quantum standards, with a focus on efforts to reduce public key size by replacing the binary Goppa code.} \\
+\emph{Evolving a Cryptographic Compression Function} with Prof. Lee Spector \\
 {\small We introduce a new cryptographic compression function evolved using the PushGP genetic programming environment and a novel fitness heuristic.}
 
 \end{rSection}
@@ -39,48 +38,52 @@ Thesis 2: \emph{Evolving a Cryptographic Compression Function} \\
 %----------------------------------------------------------------------------
 \begin{rSection}{Publications}
 
-\textbf{Proofs for Inner Pairing Products and Applications} \hfill \emph{Oct. `19} \\
-\emph{In submission, ASIACRYPT `21} \\
-\url{https://eprint.iacr.org/2019/1177.pdf} \\
-{\small We present a generalized inner product argument (GIPA), then show how
-to achieve a log-time verifier for several pairing-based languages. We apply
-these arguments to build polynomial commitments that improve on the opening
-proof time and CRS size of KZG, provide the first concretely efficient protocol for aggregating Groth16 proofs without recursion, and construct a low-memory SNARK improving on Bitansky et al. [STOC '13].}
+\textbf{Proofs for Inner Pairing Products and Applications} \hfill \emph{`21} \\
+\emph{ASIACRYPT `21} \quad \url{https://ia.cr/2019/1177} \\
+{\small We generalize previous works on inner product arguments (IPAs) to any bilinear map and introduce new IPAs for pairing-based languages--the first with log-time verifiers. Combining several new IPAs, we construct new polynomial commitments improving on the prover time and CRS size of KZG, provide the first concretely efficient protocol for aggregating Groth16 proofs without recursion, and construct a low-memory SNARK for machine computations with a significantly faster prover over prior state-of-the-art [Bitansky et al., STOC '13].}
 
-\textbf{Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS} \hfill \emph{Sept. `19} \\
-\emph{EUROCRYPT `20} \\
-\url{https://eprint.iacr.org/2019/1047.pdf} \\
-{\small We present a methodology to construct preprocessing zkSNARKs where the structured reference string (SRS) is universal and updatable. Improving on the state-of-the-art in this setting, we use our methodology to obtain a preprocessing zkSNARK where the SRS has linear size and arguments have constant size.}
+\textbf{Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS} \hfill \emph{`20} \\
+\emph{EUROCRYPT `20} \quad \url{https://ia.cr/2019/1047} \\
+{\small We present a methodology to construct preprocessing zkSNARKs with universal and updatable SRS. Our construction improves on Sonic [Maller et al., CCS 2019], the prior state of the art in this setting, in all efficiency parameters: proving is an order of magnitude faster and verification is thrice as fast, even with smaller SRS size and argument size.}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------
 %----------------------------------------------------------------------------
+\begin{rSection}{Preprints}
+\textbf{Plumo: An Ultralight Blockchain Client} \hfill \emph{`21} \\
+\emph{In submission, Financial Cryptography `21} \quad \url{https://ia.cr/2021/1361} \\
+{\small We introduce a consensus-agnostic methodology for constructing ultralight clients, providing highly efficient blockchain syncing via SNARK-based state transition proofs. We also present two new SNARK-friendly constructions: a BLS-based offline aggregate multisignature scheme in which signers do not have to know their multisignature group in advance, and a composite algebraic-symmetric cryptographic hash function.}
+\end{rSection}
 
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+
+\pagebreak
 \begin{rSection}{Work experience}
 
+\textbf{Aleo} \hfill \emph{Oct `21---Present} \\
+\emph{Scientist} \hfill \emph{San Francisco, CA}
 
-\textbf{cLabs} \hfill \emph{June `19---Present} \\
-\emph{Research Scientist} \hfill \emph{San Francisco, CA} \\
-{\small Designed an ultralight client for the Celo blockchain using SNARKS and circuit-friendly primitives including a novel aggregeate multisignature
-composite hash function. Co-author of the technical paper.}
+\textbf{cLabs} \hfill \emph{June `19---Oct `21} \\
+\emph{Scientist} \hfill \emph{San Francisco, CA} \\
+{\small Designed an ultralight client for the Celo blockchain using SNARKS and circuit-friendly primitives including a novel aggregeate multisignature composite hash function. Contributed to designs for privacy-preserving contact discovery and private transaction comments.}
 
 \textbf{University of California, Berkeley} \hfill \emph{Oct. `19---Oct. `20} \\
 \emph{Research Assistant} \hfill \emph{Berkeley, CA} \\
 {\small With professor Alessandro Chiesa, researching topics in zero-knowledge proofs.}
 
-\textbf{Glyff} \hfill \emph{Summer `18} \\
-\emph{Research Scientist} \hfill \emph{London, UK} \\
-{\small Designed a privacy-preserving smart contract platform based on Ethereum. Co-authored the white paper and audited an initial implementation.}
+% \textbf{Glyff} \hfill \emph{Summer `18} \\
+% \emph{Research Scientist} \hfill \emph{London, UK} \\
+% {\small Designed a privacy-preserving smart contract platform based on Ethereum. Co-authored the white paper and audited an initial implementation.}
 
-\textbf{Freelance} \hfill \emph{Sept. `17---May `18} \\
-\emph{Security Engineer} \hfill \emph{Mexico City, MX} \\
-{\small Information security and cryptography related development, consulting, and training. With a focus on helping non-profits, clients included Data Cívica and Human Rights Data Analysis Group.}
+\textbf{Information Security Services} \hfill \emph{Sept. `17---May `18} \\
+{\small Information security and cryptography related development, consulting, and training. Worked with non-profits including Data Cívica and Human Rights Data Analysis Group.}
 
 \textbf{Freedom of the Press Foundation} \hfill \emph{Sept. `15---Aug. `17} \\
 \emph{Security Engineer} \hfill \emph{San Francisco, CA} \\
 \url{https://github.com/freedomofpress/securedrop} \\
-{\small Jointly developed the SecureDrop open-source whistleblower submission platform. Stringent security requirements and a multi-machine, multi-OS architecture demanded wide-breadth domain knowledge including cryptographic, network, OS, and application-level security expertise.} \\
+{\small Design and development of the SecureDrop open-source whistleblower submission platform. Stringent security requirements and a multi-machine, multi-OS architecture demanded wide-breadth domain knowledge including cryptographic, network, OS, and application-level security expertise.} \\
 \url{https://github.com/freedomofpress/fingerprint-securedrop} \\
 {\small Implemented a machine learning system to evaluate website fingerprinting attacks and defenses for Tor onion services. Led Tor developer conference sessions on the topic and worked closely with academic researchers.}
 
@@ -88,7 +91,13 @@ composite hash function. Co-author of the technical paper.}
 
 %----------------------------------------------------------------------------
 %----------------------------------------------------------------------------
-\begin{rSection}{Invited talks}
+\begin{rSection}{Talks}
+
+\textbf{ASIACRYPT} \hfill \emph{Dec. `21} \\
+\emph{Proofs for Inner Pairing Products and Applications}
+
+\textbf{zkSummit 5} \hfill \emph{May `20} \\
+\emph{Inner Pairing Product Arguments and Applications}
 
 \textbf{Scaling Bitcoin} at Tel Aviv University \hfill \emph{Sept. `19} \\
 \emph{The Celo Ultralight Client} \hfill \emph{Tel Aviv, ISR}
@@ -102,9 +111,13 @@ composite hash function. Co-author of the technical paper.}
 %----------------------------------------------------------------------------
 \begin{rSection}{Teaching experience}
 
+\textbf{Introduction to Cryptography} \hfill \emph{Fall `21} \\
+\emph{Teaching assistant} \hfill \emph{UCSD} \\
+{\small Co-taught discussion section, held office hours, and created and graded assignments with Prof. Nadia Heninger.}
+
 \textbf{Hampshire College Quantitative Resource Center} \hfill \emph{Sept. `12---May `15} \\
 \emph{Manager} \hfill \emph{Amherst, MA} \\
-{\small Tutored primarily mathematics and computer science. Managed the hiring process, budgeting, and staff schedule, leading to record attendance levels.}
+{\small Tutored mathematics and computer science. Management duties included hiring, budgeting, and scheduling.}
 
 \textbf{Linear Algebra} \hfill \emph{Fall `14} \\
 \emph{Teaching Assistant} \hfill \emph{Hampshire College} \\
@@ -114,9 +127,10 @@ composite hash function. Co-author of the technical paper.}
 
 %----------------------------------------------------------------------------
 %----------------------------------------------------------------------------
+\pagebreak
 \begin{rSection}{Academic service}
 
-\textbf{Financial Cryptography} \hfill \emph{2020} \\
+\textbf{Financial Cryptography} \hfill \emph{`20} \\
 \emph{Subreviewer} \\
 
 \end{rSection}
